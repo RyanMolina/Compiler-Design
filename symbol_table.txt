@@ -1,0 +1,60 @@
+Int	INT
+intAge	IDENTIFIER
+=	EQ
+0	INT 
+;	TER
+String	STRING
+strName	IDENTIFIER
+[	OS
+30	INT 
+;	TER
+View	VIEW
+"Enter your Age: "	STRING
+;	TER
+Read	READ
+(	OP
+intAge	IDENTIFIER
+;	TER
+nput 20	COMMENT
+If	IF
+(	OP
+intAge	IDENTIFIER
+>=	GE
+18	INT 
+{	OCUR
+Read	READ
+"Enter your  Name: "	STRING
+;	TER
+input	IDENTIFIER
+View	VIEW
+"My Name is"	STRING
++	ADD/CON
+strName	IDENTIFIER
++	ADD/CON
+"and I'm "	STRING
++	ADD/CON
+intAge	IDENTIFIER
++	ADD/CON
+"y/o"	STRING
+;	TER
+}	CCUR
+Else	ELSE
+View	VIEW
+STRING	"You are  (Missing Closing Quote)
+not	IDENTIFIER
+allowed!"	INVALID ID/OUT OF RANGE
+;	TER
+
+
+	Check Comments *  /
+
+*
+
+
+
+
+
+
+
+
+	COMMENT(Unclosed comment)

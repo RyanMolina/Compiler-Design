@@ -1,0 +1,26 @@
+Int intAge=0;
+	String strName[30];
+	
+	View("Enter your Age: ");
+	Read(intAge);			//nput 20
+	If( intAge >= 18 ){
+		Read("Enter your  Name: ");	 input Leo
+		View("My Name is" + strName  + "and I'm " + intAge + "y/o");	
+
+	}Else
+		View("You are 
+		not allowed!");
+
+/*
+
+	Check Comments *  /
+
+*
+
+
+
+
+
+
+
+
