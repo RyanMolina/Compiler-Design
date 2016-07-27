@@ -1,0 +1,84 @@
+
+Void Main(){
+
+	Int intNum1 = 1, intNum2 = 2, intNum3 = 3, intNum4 = 4, intTotal, intAge;
+
+	Char charMidInit[2];
+	Char charFiveLetters[5]={ '2' ,'c', 'd' ,'4' ,'6'};
+	Char char1stLetter= 'a';
+	String strFirstName, strLastName, strExample = "String Example";
+	Double dblHeight, dblWeight, dblExample = 1.25;
+	Boolean blnElementaryGrad = True, blnHighSchoolGrad = True, blnCollegeGrad = False, blnHaveWork = False;
+
+	Const Double pI = 3.14;
+	
+	View("\nEnter your First Name:\t"); 
+	Read(strFirstName);
+	View("\nEnter your Last Name:\t");
+	Read(strLastName);
+	
+	View("\nEnter your Height:\t");
+	Read(dblHeight);
+	View("\nEnter your Weight:\t");
+	Read(dblWeight);
+	
+	View(char1stLetter);		
+
+	View(" \n Enter your Age: \t ");
+		Read(intAge);
+		If(intAge >= 6 Or intAge <= 12){
+			Do{
+				intNum1 = intNum1 + intNum1;
+				intNum2 = intNum2 - intNum2;
+				intNum3 = intNum3 * intNum3;
+				intNum4 = intNum4 / intNum4;
+				intNum5 = intNum % intNum5;
+				
+				intNum1++;
+				intNum2--;
+				
+				
+			}While(Not(ntTotal == 0));
+			
+		}
+		If(intAge >= 6 Or intAge <= 12){
+			Do{
+				intNum1 = intNum1 + intNum1;
+				intNum2 = intNum2 - intNum2;
+				intNum3 = intNum3 * intNum3;
+				intNum4 = intNum4 / intNum4;
+				intNum5 = intNum % intNum5;
+				
+				intNum1++;
+				intNum2--;
+				
+				
+			}While(Not(ntTotal == 0));
+			
+		}
+		Elif(intAge > 13 And intAge <17){
+			For(intLoop=0; intLoop<5; intLoop++){
+				View("Stress!\t");
+				Stop;
+			}
+			
+			For(intLoop=5; intLoop>=0; intLoop--){
+				View("Insomnia\n");
+				Next;
+			}
+			
+		}
+		Elif(intAge == 24 Or intAge <>100){
+			
+			Jumpto 5;
+		}
+		Else{
+			While(blnElementaryGrad == blnHaveWork){
+				View("Put a sentence Here");
+				If(intAge== 0){
+					View("Okeh");
+				}
+			}
+		}
+		
+}

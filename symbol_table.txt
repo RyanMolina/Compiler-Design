@@ -1,50 +1,61 @@
-Int	INT
-intAge	IDENTIFIER
-=	EQ
-0	INT 
-;	TER
-String	STRING
-strName	IDENTIFIER
-[	OS
-30	INT 
-;	TER
-View	VIEW
-"Enter your Age: "	STRING
-;	TER
-Read	READ
-(	OP
-intAge	IDENTIFIER
-;	TER
-nput 20	COMMENT
-If	IF
-(	OP
-intAge	IDENTIFIER
->=	GE
-18	INT 
-{	OCUR
-Read	READ
-"Enter your  Name: "	STRING
-;	TER
-input	IDENTIFIER
-View	VIEW
-"My Name is"	STRING
-+	ADD/CON
-strName	IDENTIFIER
-+	ADD/CON
-"and I'm "	STRING
-+	ADD/CON
-intAge	IDENTIFIER
-+	ADD/CON
-"y/o"	STRING
-;	TER
-}	CCUR
-Else	ELSE
-View	VIEW
-STRING	"You are  (Missing Closing Quote)
-not	IDENTIFIER
-allowed!"	INVALID ID/OUT OF RANGE
-;	TER
-
+Int						INT
+intAge					IDENTIFIER
+=						EQUAL
+0					INTEGER_NUM 
+;						TERMINATOR
+String					STRING
+strName					IDENTIFIER
+[						SQR_START
+30					INTEGER_NUM 
+]						SQR_END
+;						TERMINATOR
+View					VIEW
+(						PAREN_START
+"Enter your Age: "					STRING_LIT
+)						PAREN_END
+;						TERMINATOR
+Read					READ
+(						PAREN_START
+intAge					IDENTIFIER
+)						PAREN_END
+;						TERMINATOR
+//nput 20					COMMENT
+If						IF
+(						PAREN_START
+intAge					IDENTIFIER
+>=						GREAT_EQUAL
+18					INTEGER_NUM 
+)						PAREN_END
+{						CURL_START
+Read					READ
+(						PAREN_START
+"Enter your  Name: "					STRING_LIT
+)						PAREN_END
+;						TERMINATOR
+input					IDENTIFIER
+Leo 					 ERROR
+View					VIEW
+(						PAREN_START
+"My Name is"					STRING_LIT
++						OPTR_ADD
+strName					IDENTIFIER
++						OPTR_ADD
+"and I'm "					STRING_LIT
++						OPTR_ADD
+intAge					IDENTIFIER
++						OPTR_ADD
+"y/o"					STRING_LIT
+)						PAREN_END
+;						TERMINATOR
+}						CURL_END
+Else					ELSE
+View					VIEW
+(						PAREN_START
+"You are 
+		not allowed!"					STRING_LIT
+)						PAREN_END
+;						TERMINATOR
+**
 
 	Check Comments *  /
 
@@ -57,4 +68,4 @@ allowed!"	INVALID ID/OUT OF RANGE
 
 
 
-	COMMENT(Unclosed comment)
+					COMMENT(Unclosed comment)
